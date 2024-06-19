@@ -144,16 +144,18 @@ LinkedList.prototype.reverse= function(){
     this.head=prev
 }
 
+//  l.deleteByKey(6)
+//  l.print()
+// l.traversal()
+// l.reverse()
+// l.traversal()
 
+// usage of search operation
 const l = new LinkedList()
-l.insertAtFront(1)
-l.insertAtEnd(5)
-l.insertAtEnd(6)
+l.insertAtFront(12)
 l.insertAtEnd(7)
-// l.print()
-// l.deleteByKey(6)
-// l.print()
-l.traversal()
-l.reverse()
-l.traversal()
-
+l.insertAtEnd(5)
+l.insertAtEnd(15)
+l.print()
+console.log(l.search(7)) // true
+console.log(l.search(14)) // false
