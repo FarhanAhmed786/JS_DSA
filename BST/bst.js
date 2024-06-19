@@ -75,3 +75,45 @@ BinarySearchTree.prototype.findMinNode = function(node){
     }
     return node
 }
+
+BinarySearchTree.prototype.inOrderTraversal = function(){
+    const result = []
+    this.inOrder(this.root,result)
+    return result
+}
+
+BinarySearchTree.prototype.inOrder = function(){
+    if(node !== null){
+        this.inOrder(node.left,result)
+        result.push(node.key)
+        this.inOrder(node.right,result)
+    }
+}
+
+BinarySearchTree.prototype.preOrderTraversal = function(){
+    const result = []
+    this.preOrder(this.root,result)
+    return result
+}
+
+BinarySearchTree.prototype.preOrder = function(){
+    if(node !== null){
+        result.push(node.key)
+        this.preOrder(node.left,result)
+        this.preOrder(node.right,result)
+    }
+}
+
+BinarySearchTree.prototype.postOrderTraversal = function(){
+    const result = []
+    this.postOrder(this.root,result)
+    return result
+}
+
+BinarySearchTree.prototype.postOrder = function(){
+    if(node !== null){
+        result.push(node.key)
+        this.postOrder(node.left,result)
+        this.postOrder(node.right,result)
+    }
+}
