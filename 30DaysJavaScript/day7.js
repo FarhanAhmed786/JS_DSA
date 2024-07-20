@@ -74,7 +74,7 @@ for (const prop in book) {
     
 }
 
-// Task 8: Use a Object.keys and Objects.values methods to log all the keys and values of the book object.
+// Task 9: Use a Object.keys and Objects.values methods to log all the keys and values of the book object.
 
 console.log(`Keys are ${Object.keys(book)}`);
 console.log(`Values are ${Object.values(book)}`);
