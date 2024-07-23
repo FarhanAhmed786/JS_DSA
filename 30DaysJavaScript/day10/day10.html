@@ -13,6 +13,48 @@
     <div>
         <img src="../images/barfi.jpg" alt="barfi image" id="barfi" width="400px">
     </div>
+    <div>
+        <p>Enter a key </p>
+        <input type="text" name="text" id="keyboard">
+    </div>
+    <div>
+        <p>Enter a paragraph</p>
+        <input type="text" name="para" id="paragraph">
+        <p id="display"></p>
+    </div>
+    <form action="post" id="form">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <button type="submit" >submit</button>
+    </form>
+    <div>
+        <label for="lang">Select a Language</label>
+        <select name="Languages" id="lang">
+            <option value="js">JavaScript</option>
+            <option value="css">css</option>
+            <option value="html">Html</option>
+            <option value="c">C</option>
+        </select>
+        <p id="langDisplay"></p>
+    </div>
+    <div>
+        <ol id="types">
+            <li>chai</li>
+            <li>tea</li>
+            <li>coffee</li>
+            <li>milk</li>
+        </ol>
+    </div>
+    <div id="parent">
+        <button id="addChild">Add Child</button>
+        <ul id="childList"></ul>
+    </div>
     <script src="./day10.js"></script>
 </body>
 </html>
