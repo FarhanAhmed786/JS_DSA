@@ -24,11 +24,11 @@ function recursiveReverseString(string){
         recursiveReverseString(string.substring(0,string.length - 1))
 }
 
-// console.log(recursiveReverseString('Farhan'));
+console.log(recursiveReverseString('Farhan'));
 
-str = "hello"
-console.log(str.length);
-console.log(str.substring(0,str.length));
-console.log(str.substring(0,str.length-1));
+// str = "hello"
+// console.log(str.length);
+// console.log(str.substring(0,str.length));
+// console.log(str.substring(0,str.length-1));
 
 

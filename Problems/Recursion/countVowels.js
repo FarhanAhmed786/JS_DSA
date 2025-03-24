@@ -25,7 +25,7 @@ function countVowels(string){
 // console.log(countVowels("farhan"));
 
 function recursiveCountVowels(string,stringLength){
-    // console.log(`length : ${stringLength}`);
+    console.log(`length : ${stringLength} current string ${string.substring(0,stringLength)}`);
     if(stringLength == 1){
         return Number(isVowel(string[0]));
     }
